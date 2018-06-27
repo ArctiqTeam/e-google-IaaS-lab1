@@ -83,3 +83,7 @@ Return to the Google Cloud Shell.
 Paste the contents of your clipboard on the command line and hit enter.
 
 You are watching the VM instance being created.
+
+## Next
+
+[Terraform](2-terrafrom.md)
