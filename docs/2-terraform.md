@@ -4,9 +4,7 @@
 
 As we can not install the Terraform in a usual way on Google Cloud Shell, we will help you work around this.
 
-As you are still in the root of your home directory.
-
-Create a new directory called `bin`using the `mkdir bin` command.
+As you are still in the root of your home directory, create a new directory called `bin`using the `mkdir bin` command.
 
 Switch into the created directory `cd bin`.
 
