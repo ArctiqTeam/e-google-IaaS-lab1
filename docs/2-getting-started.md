@@ -61,4 +61,4 @@ You are watching the VM instance being created.
 
 ## Next
 
-[Terraform ->](2-terraform.md)
+[Terraform ->](3-terraform.md)
