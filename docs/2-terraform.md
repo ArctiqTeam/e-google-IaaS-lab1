@@ -28,7 +28,7 @@ To make our life easy Google has already added a conditonal statement that adds 
 
 ## Project Directory
 
-To keep things tidy, lets create a directory to keep our files. We recommend calling it workshop. Feel free to use the Code Editor or Shell depending on what you prefer.
+To keep things tidy, let's create a directory to keep our files. We recommend calling it workshop. Feel free to use the Code Editor or Shell depending on what you prefer.
 
 ## Create a Webserver
 
@@ -192,7 +192,7 @@ Although that would be a correct choice, but it is not an optimal one. Especiall
 
 Luckily Terraform support a parameter called `count` in most of it's resource blocks. This turns a resource block into a loop that creates as many instances as specified by the `count` parameter.
 
-But what about the `name` parameter? Each instance needs a unique one. A small trick that uses the index of the current loop can be used and concatenetad with the name. Lets take a look.
+But what about the `name` parameter? Each instance needs a unique one. A small trick that uses the index of the current loop can be used and concatenetad with the name. Let's take a look.
 
 ```
 resource "google_compute_instance" "webservers" {
