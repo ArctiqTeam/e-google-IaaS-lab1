@@ -22,3 +22,7 @@ _Note: If you have done this before and have used up the credit, the best way is
 2. At the top you should see the 12 months, $300 offer link. Follow it.
 3. Follow the steps and accept the agreements.
 4. Enter your contact and credit card information when required.
+
+## Next
+
+[Getting Started ->](2-getting-started.md)
