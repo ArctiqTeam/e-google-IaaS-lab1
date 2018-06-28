@@ -260,7 +260,7 @@ Run `terrafrom apply` and accept the changes. Navigate to **Network services** -
 
 Digging in the console to find the IP address of the load balancer was a bit of an annoying task. There is a better way to find out what the IP is. Terraform has a notion of Output. It displays output at the end of the run and it saves the values in the state file for later use. We will make use of the first point.
 
-In the workshop directory create a file called **loadbalancer.tf** and open it in the editor.
+In the workshop directory create a file called **output.tf** and open it in the editor.
 
 ```
 output "ext_url" {
