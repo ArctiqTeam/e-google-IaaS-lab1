@@ -24,7 +24,7 @@ To make it executable run `chmod u+x terraform`.
 
 Test your installation `terraform --version` should produce the currently installed version.
 
-To make our life easy Google has already added a conditonal statement that adds the bin directory to the PATH. For this to happen we need to restart the server. In the right top corner click on the **three dots** and select **Reboot** from the menu.
+To make our life easy Google has already added a conditonal statement that adds the bin directory to the PATH. Run `source ~/.bashrc` to kick in the changes. If this did not work you will need to restart the server. For this to happen we need to restart the server. In the right top corner click on the **three dots** and select **Reboot** from the menu.
 
 ## Project Directory
 
