@@ -134,7 +134,7 @@ Switch to the workshop directory in the shell `cd workshop`
 
 ### Setup the "provider"
 
-In the workshop directory create a file called **main.tf** and open it in the editor.
+In the workshop directory create a file called **providers.tf** and open it in the editor.
 
 ```
 provider "google" {
@@ -155,7 +155,7 @@ At this point run `terraform init` to initialaze and then `terraform apply`. You
 
 ### Create a VM Instance
 
-In the workshop directory create a file called **server.tf** and open it in the editor.
+In the workshop directory create a file called **servers.tf** and open it in the editor.
 
 ```
 resource "google_compute_instance" "webserver" {
@@ -181,7 +181,7 @@ In the GCP Console navigate to **Compute Engine** -&gt; [**VM Instances**](https
 
 ### Add Firewall Rule and External IP
 
-First let us create a firewall rule. Create a file called **firewall.tf** and open it.
+First let us create a firewall rule. Create a file called **firewalls.tf** and open it.
 
 ```
 resource "google_compute_firewall" "http" {
@@ -200,7 +200,7 @@ resource "google_compute_firewall" "http" {
 
 Notice the `target_tags` parameter. It hold the tags that will be affected by this rule.
 
-Go back to the **server.tf** file. 
+Go back to the **servers.tf** file. 
 
 ```
 resource "google_compute_instance" "webserver" {
@@ -331,7 +331,7 @@ It's that time again... Run `terrafrom apply` and accept the changes. Switch bac
 
 ### Load Balancer
 
-In the workshop directory create a file called **loadbalancer.tf** and open it in the editor.
+In the workshop directory create a file called **loadbalancers.tf** and open it in the editor.
 
 ```
 resource "google_compute_target_pool" "webserver_pool" {
@@ -358,7 +358,7 @@ Run `terrafrom apply` and accept the changes. Navigate to **Network services** -
 
 Digging in the console to find the IP address of the load balancer was a bit of an annoying task. There is a better way to find out what the IP is. Terraform has a notion of Output. It displays output at the end of the run and it saves the values in the state file for later use. We will make use of the first point.
 
-In the workshop directory create a file called **output.tf** and open it in the editor.
+In the workshop directory create a file called **outputs.tf** and open it in the editor.
 
 ```
 output "ext_url" {
@@ -463,7 +463,7 @@ variable "server_count" {
 
 The code above creates four variables and assigs default values to three of them. First two are very straight forward. The third one is an array. We set three different zones that we can deploy to. While the last variable does not have a default it has a description. You will see why latter.
 
-Return to the **main.tf** file.
+Return to the **providers.tf** file.
 
 ```
 provider "google" {
@@ -474,7 +474,7 @@ provider "google" {
 
 Replace hardcoded values with the variables. Notice the syntax for defined variables. They are prefixed with `var.`
 
-Switch over to the **server.tf** file.
+Switch over to the **servers.tf** file.
 
 ```
 zone = "${element(var.zones, count.index)}"
