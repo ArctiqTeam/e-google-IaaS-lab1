@@ -1,6 +1,4 @@
-# Terraform Lab
-
-## Requirements
+# Requirements
 
 For this workshop you will require:
 
@@ -9,14 +7,14 @@ For this workshop you will require:
 * A valid credit card is need. 
   * It will not be charged. Even if you somehow go over the $300 mark, without your further approval.
 
-### Creating A Google Account
+## Creating A Google Account
 
 _Note: Skip this step, if you have a Google Account, such as Gmail and have not used your $300 Google Cloud Platform offer._
 
 1. In your browser, preferably Google Chrome \(as it's the one we have tested\), go to [https://accounts.google.com/SignUp?hl=ga](https://accounts.google.com/SignUp?hl=ga)
 2. Follow the steps to create an account.
 
-### Claiming 12 Months, $300 Google Cloud Platform Credit
+## Claiming 12 Months, $300 Google Cloud Platform Credit
 
 _Note: If you have done this before and have used up the credit, the best way is to create another, new account._
 
@@ -24,6 +22,12 @@ _Note: If you have done this before and have used up the credit, the best way is
 2. At the top you should see the 12 months, $300 offer link. Follow it.
 3. Follow the steps and accept the agreements.
 4. Enter your contact and credit card information when required.
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 ## Getting Started
 
@@ -80,9 +84,15 @@ Paste the contents of your clipboard on the command line and hit enter.
 
 You are watching the VM instance being created.
 
-## Terraform
+&nbsp;
 
-### Installation
+&nbsp;
+
+&nbsp;
+
+# Terraform
+
+## Installation
 
 As we can not install the Terraform in a usual way on Google Cloud Shell, we will help you work around this.
 
@@ -108,11 +118,11 @@ Test your installation `terraform --version` should produce the currently instal
 
 To make our life easy Google has already added a conditonal statement that adds the bin directory to the PATH. Run `source ~/.bashrc` to kick in the changes. If this did not work, you will need to restart the server. In the right top corner click on the **three dots** and select **Reboot** from the menu.
 
-### Project Directory
+## Project Directory
 
 To keep things tidy, let's create a directory to keep our files. We recommend calling it workshop. Feel free to use the Code Editor or Shell depending on what you prefer.
 
-### Create a Webserver
+## Create a Webserver
 
 Switch to the workshop directory in the shell `cd workshop`
 
@@ -262,7 +272,7 @@ Return the the [**VM Instances**](https://console.cloud.google.com/compute/insta
 
 Congratulations! You have created your first server using Terraform!
 
-### Create a Load Balanced Web Server Pool
+## Create a Load Balanced Web Server Pool
 
 Let us move one to an example that may be a bit more practical and have a bit of a redundancy rolled into it. A load balance pool of servers.
 
@@ -421,7 +431,7 @@ Notice that the health check configuration getts attached to the `webserver_pool
 
 Run `terrafrom apply` and accept the changes. Navigate to **Network services** -&gt; [**Load balancing**](https://console.cloud.google.com/net-services/loadbalancing/loadBalancers/list). Click on the webserver-pool. You should see the health of all the webservers here.
 
-### Variables
+## Variables
 
 No configuration would be complete withouth setting some variables. We can put our values in the configuration like we have, but centralizing them creates a much more editable setup.
 
@@ -480,7 +490,7 @@ Switch back to the  [**VM Instances**](https://console.cloud.google.com/compute/
 
 You may wonder how did an array of 3 zones fill more than 3 servers. It's a bit of a special feature in Terraform. When array end is reached it starts lopping from the top. This is very useful for situations like the current one.
 
-### Conclusion
+## Conclusion
 
 In less than 100 lines of configuration we have created a fully functional load balanced webserver configuration.
 
