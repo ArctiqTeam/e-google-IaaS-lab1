@@ -13,7 +13,7 @@ For this workshop you will require:
 
 _Note: Skip this step, if you have a Google Account, such as Gmail and have not used your $300 Google Cloud Platform offer._
 
-1. In your browser, preferably Google Chrome \(as it's the one we have tested\),  go to [https://accounts.google.com/SignUp?hl=ga](https://accounts.google.com/SignUp?hl=ga)
+1. In your browser, preferably Google Chrome \(as it's the one we have tested\), go to [https://accounts.google.com/SignUp](https://accounts.google.com/SignUp)
 2. Follow the steps to create an account.
 
 ### Claiming 12 Months, $300 Google Cloud Platform Credit
