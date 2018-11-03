@@ -8,6 +8,7 @@ provider "google" {
 ```
 &nbsp;
 &nbsp;
+&nbsp;
 ## Snippet 2
 &nbsp;
 ```
@@ -31,6 +32,7 @@ resource "google_compute_instance" "webserver" {
 ```
 &nbsp;
 &nbsp;
+&nbsp;
 ## Snippet 3
 &nbsp;
 ```
@@ -47,6 +49,7 @@ resource "google_compute_firewall" "http" {
   target_tags   = ["http-server"]
 }
 ```
+&nbsp;
 &nbsp;
 &nbsp;
 ## Snippet 4
@@ -74,6 +77,7 @@ resource "google_compute_instance" "webserver" {
   }
 }
 ```
+&nbsp;
 &nbsp;
 &nbsp;
 ## Snippet 5
@@ -107,6 +111,7 @@ SCRIPT
 
 }
 ```
+&nbsp;
 &nbsp;
 &nbsp;
 ## Snippet 6
@@ -143,6 +148,7 @@ SCRIPT
 ```
 &nbsp;
 &nbsp;
+&nbsp;
 ## Snippet 7
 &nbsp;
 ```
@@ -159,6 +165,7 @@ resource "google_compute_forwarding_rule" "http_forward" {
 ```
 &nbsp;
 &nbsp;
+&nbsp;
 ## Snippet 8
 &nbsp;
 ```
@@ -166,6 +173,7 @@ output "ext_url" {
   value = "http://${google_compute_forwarding_rule.http_forward.ip_address}"
 }
 ```
+&nbsp;
 &nbsp;
 &nbsp;
 ## Snippet 9
@@ -187,6 +195,7 @@ resource "google_compute_address" "ext_ip" {
   name = "ext-ip"
 }
 ```
+&nbsp;
 &nbsp;
 &nbsp;
 ## Snippet 10
@@ -217,6 +226,7 @@ resource "google_compute_http_health_check" "http_check" {
 ```
 &nbsp;
 &nbsp;
+&nbsp;
 ## Snippet 11
 &nbsp;
 ```
@@ -238,6 +248,7 @@ variable "server_count" {
 ```
 &nbsp;
 &nbsp;
+&nbsp;
 ## Snippet 12
 &nbsp;
 ```
@@ -248,11 +259,13 @@ provider "google" {
 ```
 &nbsp;
 &nbsp;
+&nbsp;
 ## Snippet 13
 &nbsp;
 ```
 zone = "${element(var.zones, count.index)}"
 ```
+&nbsp;
 &nbsp;
 &nbsp;
 ## Snippet 14
