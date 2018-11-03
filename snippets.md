@@ -1,5 +1,4 @@
 ## Snippet 1
-&nbsp;
 ```
 provider "google" {
   project = "ivory-program-207902"   # Needs to be your value.
