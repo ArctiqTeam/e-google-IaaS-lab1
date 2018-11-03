@@ -1,4 +1,4 @@
-## Snippet 1
+### Snippet 1
 ```
 provider "google" {
   project = "ivory-program-207902"   # Needs to be your value.
@@ -8,7 +8,7 @@ provider "google" {
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 2
+### Snippet 2
 ```
 resource "google_compute_instance" "webserver" {
   name         = "webserver"
@@ -31,7 +31,7 @@ resource "google_compute_instance" "webserver" {
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 3
+### Snippet 3
 ```
 resource "google_compute_firewall" "http" {
   name    = "http"
@@ -49,7 +49,7 @@ resource "google_compute_firewall" "http" {
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 4
+### Snippet 4
 ```
 resource "google_compute_instance" "webserver" {
   name         = "webserver"
@@ -76,7 +76,7 @@ resource "google_compute_instance" "webserver" {
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 5
+### Snippet 5
 ```
 resource "google_compute_instance" "webserver" {
   name         = "webserver"
@@ -109,7 +109,7 @@ SCRIPT
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 6
+### Snippet 6
 ```
 resource "google_compute_instance" "webservers" {
   count        = 3
@@ -143,7 +143,7 @@ SCRIPT
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 7
+### Snippet 7
 ```
 resource "google_compute_target_pool" "webserver_pool" {
   name      = "webserver-pool"
@@ -159,7 +159,7 @@ resource "google_compute_forwarding_rule" "http_forward" {
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 8
+### Snippet 8
 ```
 output "ext_url" {
   value = "http://${google_compute_forwarding_rule.http_forward.ip_address}"
@@ -168,7 +168,7 @@ output "ext_url" {
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 9
+### Snippet 9
 ```
 resource "google_compute_target_pool" "webserver_pool" {
   name      = "webserver-pool"
@@ -189,7 +189,7 @@ resource "google_compute_address" "ext_ip" {
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 10
+### Snippet 10
 ```
 resource "google_compute_target_pool" "webserver_pool" {
   name          = "webserver-pool"
@@ -217,7 +217,7 @@ resource "google_compute_http_health_check" "http_check" {
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 11
+### Snippet 11
 ```
 variable "project" {
   default = "ivory-program-207902"
@@ -238,7 +238,7 @@ variable "server_count" {
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 12
+### Snippet 12
 ```
 provider "google" {
   project = "${var.project}"
@@ -248,14 +248,14 @@ provider "google" {
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 13
+### Snippet 13
 ```
 zone = "${element(var.zones, count.index)}"
 ```
 &nbsp;
 &nbsp;
 &nbsp;
-## Snippet 14
+### Snippet 14
 ```
 count = "${var.server_count}"
 ```
