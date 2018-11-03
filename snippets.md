@@ -9,7 +9,6 @@ provider "google" {
 &nbsp;
 &nbsp;
 ## Snippet 2
-&nbsp;
 ```
 resource "google_compute_instance" "webserver" {
   name         = "webserver"
@@ -33,7 +32,6 @@ resource "google_compute_instance" "webserver" {
 &nbsp;
 &nbsp;
 ## Snippet 3
-&nbsp;
 ```
 resource "google_compute_firewall" "http" {
   name    = "http"
@@ -52,7 +50,6 @@ resource "google_compute_firewall" "http" {
 &nbsp;
 &nbsp;
 ## Snippet 4
-&nbsp;
 ```
 resource "google_compute_instance" "webserver" {
   name         = "webserver"
@@ -80,7 +77,6 @@ resource "google_compute_instance" "webserver" {
 &nbsp;
 &nbsp;
 ## Snippet 5
-&nbsp;
 ```
 resource "google_compute_instance" "webserver" {
   name         = "webserver"
@@ -114,7 +110,6 @@ SCRIPT
 &nbsp;
 &nbsp;
 ## Snippet 6
-&nbsp;
 ```
 resource "google_compute_instance" "webservers" {
   count        = 3
@@ -149,7 +144,6 @@ SCRIPT
 &nbsp;
 &nbsp;
 ## Snippet 7
-&nbsp;
 ```
 resource "google_compute_target_pool" "webserver_pool" {
   name      = "webserver-pool"
@@ -166,7 +160,6 @@ resource "google_compute_forwarding_rule" "http_forward" {
 &nbsp;
 &nbsp;
 ## Snippet 8
-&nbsp;
 ```
 output "ext_url" {
   value = "http://${google_compute_forwarding_rule.http_forward.ip_address}"
@@ -176,7 +169,6 @@ output "ext_url" {
 &nbsp;
 &nbsp;
 ## Snippet 9
-&nbsp;
 ```
 resource "google_compute_target_pool" "webserver_pool" {
   name      = "webserver-pool"
@@ -198,7 +190,6 @@ resource "google_compute_address" "ext_ip" {
 &nbsp;
 &nbsp;
 ## Snippet 10
-&nbsp;
 ```
 resource "google_compute_target_pool" "webserver_pool" {
   name          = "webserver-pool"
@@ -227,7 +218,6 @@ resource "google_compute_http_health_check" "http_check" {
 &nbsp;
 &nbsp;
 ## Snippet 11
-&nbsp;
 ```
 variable "project" {
   default = "ivory-program-207902"
@@ -249,7 +239,6 @@ variable "server_count" {
 &nbsp;
 &nbsp;
 ## Snippet 12
-&nbsp;
 ```
 provider "google" {
   project = "${var.project}"
@@ -260,7 +249,6 @@ provider "google" {
 &nbsp;
 &nbsp;
 ## Snippet 13
-&nbsp;
 ```
 zone = "${element(var.zones, count.index)}"
 ```
@@ -268,7 +256,6 @@ zone = "${element(var.zones, count.index)}"
 &nbsp;
 &nbsp;
 ## Snippet 14
-&nbsp;
 ```
 count = "${var.server_count}"
 ```
