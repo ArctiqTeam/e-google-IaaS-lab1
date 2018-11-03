@@ -46,7 +46,7 @@ For this workshop we are using a the Google Cloud Shell and Code Editor. The rea
 
 ### Opening the Google Cloud Shell
 
-Open the Google Cloud Shell using the **>_** icon that can be found in the right top corner.
+Open the Google Cloud Shell using the ` >_ ` icon that can be found in the right top corner.
 
 ### Opening the Code Editor
 
