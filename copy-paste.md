@@ -1,12 +1,15 @@
-## 1
+## Snippet 1
+&nbsp;
 ```
 provider "google" {
   project = "ivory-program-207902"   # Needs to be your value.
   region  = "us-east1"               # This value can be left as is.
 }
 ```
-
-## 2
+&nbsp;
+&nbsp;
+## Snippet 2
+&nbsp;
 ```
 resource "google_compute_instance" "webserver" {
   name         = "webserver"
@@ -26,8 +29,10 @@ resource "google_compute_instance" "webserver" {
   }
 }
 ```
-
-## 3
+&nbsp;
+&nbsp;
+## Snippet 3
+&nbsp;
 ```
 resource "google_compute_firewall" "http" {
   name    = "http"
@@ -42,8 +47,10 @@ resource "google_compute_firewall" "http" {
   target_tags   = ["http-server"]
 }
 ```
-
-## 4
+&nbsp;
+&nbsp;
+## Snippet 4
+&nbsp;
 ```
 resource "google_compute_instance" "webserver" {
   name         = "webserver"
@@ -67,8 +74,10 @@ resource "google_compute_instance" "webserver" {
   }
 }
 ```
-
-## 5
+&nbsp;
+&nbsp;
+## Snippet 5
+&nbsp;
 ```
 resource "google_compute_instance" "webserver" {
   name         = "webserver"
@@ -98,8 +107,10 @@ SCRIPT
 
 }
 ```
-
-## 6
+&nbsp;
+&nbsp;
+## Snippet 6
+&nbsp;
 ```
 resource "google_compute_instance" "webservers" {
   count        = 3
@@ -130,8 +141,10 @@ SCRIPT
 
 }
 ```
-
-## 7
+&nbsp;
+&nbsp;
+## Snippet 7
+&nbsp;
 ```
 resource "google_compute_target_pool" "webserver_pool" {
   name      = "webserver-pool"
@@ -144,15 +157,19 @@ resource "google_compute_forwarding_rule" "http_forward" {
   port_range = "80"
 }
 ```
-
-## 8
+&nbsp;
+&nbsp;
+## Snippet 8
+&nbsp;
 ```
 output "ext_url" {
   value = "http://${google_compute_forwarding_rule.http_forward.ip_address}"
 }
 ```
-
-## 9
+&nbsp;
+&nbsp;
+## Snippet 9
+&nbsp;
 ```
 resource "google_compute_target_pool" "webserver_pool" {
   name      = "webserver-pool"
@@ -170,8 +187,10 @@ resource "google_compute_address" "ext_ip" {
   name = "ext-ip"
 }
 ```
-
-## 10
+&nbsp;
+&nbsp;
+## Snippet 10
+&nbsp;
 ```
 resource "google_compute_target_pool" "webserver_pool" {
   name          = "webserver-pool"
@@ -196,8 +215,10 @@ resource "google_compute_http_health_check" "http_check" {
   check_interval_sec = 1
 }
 ```
-
-## 11
+&nbsp;
+&nbsp;
+## Snippet 11
+&nbsp;
 ```
 variable "project" {
   default = "ivory-program-207902"
@@ -215,21 +236,27 @@ variable "server_count" {
   description = "How many do we build, boss?"
 }
 ```
-
-## 12
+&nbsp;
+&nbsp;
+## Snippet 12
+&nbsp;
 ```
 provider "google" {
   project = "${var.project}"
   region  = "${var.region}"
 }
 ```
-
-## 13
+&nbsp;
+&nbsp;
+## Snippet 13
+&nbsp;
 ```
 zone = "${element(var.zones, count.index)}"
 ```
-
-## 14
+&nbsp;
+&nbsp;
+## Snippet 14
+&nbsp;
 ```
 count = "${var.server_count}"
 ```
