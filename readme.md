@@ -1,5 +1,7 @@
 # Requirements
 
+&nbsp;
+
 For this workshop you will require:
 
 * A Google Account
@@ -7,14 +9,14 @@ For this workshop you will require:
 * A valid credit card is need. 
   * It will not be charged. Even if you somehow go over the $300 mark, without your further approval.
 
-## Creating A Google Account
+### Creating A Google Account
 
 _Note: Skip this step, if you have a Google Account, such as Gmail and have not used your $300 Google Cloud Platform offer._
 
 1. In your browser, preferably Google Chrome \(as it's the one we have tested\), go to [https://accounts.google.com/SignUp?hl=ga](https://accounts.google.com/SignUp?hl=ga)
 2. Follow the steps to create an account.
 
-## Claiming 12 Months, $300 Google Cloud Platform Credit
+### Claiming 12 Months, $300 Google Cloud Platform Credit
 
 _Note: If you have done this before and have used up the credit, the best way is to create another, new account._
 
@@ -29,7 +31,9 @@ _Note: If you have done this before and have used up the credit, the best way is
 
 &nbsp;
 
-## Getting Started
+# Getting Started
+
+&nbsp;
 
 ### Google Cloud Shell and Code Editor
 
@@ -91,6 +95,8 @@ You are watching the VM instance being created.
 &nbsp;
 
 # Terraform
+
+&nbsp;
 
 ## Installation
 
